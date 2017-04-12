@@ -19,7 +19,7 @@ read decisao
         case $decisao in
                 C|c) echo "Iniciando a cópia da cópia por segurança";;
                         mkdir /home/hgtrans/$ticket;
-                        if [-e /home/hgtrans/$ticket] then
+                        if [-d /home/hgtrans/$ticket] then
                                 /scripts/pkgacct $usuario /home/hgtrans/$ticket;
                                 clear
                                 echo "O backup foi concluído neste momento, iniciando agora a restauração do NAS"
@@ -46,3 +46,4 @@ read decisao
                                                         clear
                                                 echo "A restauração de todos os bancos foi concluída, pode ser que alguns tenham que ser restaurados manualmente. Verifique!"
 
+https://github.com/edestark/public/blob/master/cdtip
