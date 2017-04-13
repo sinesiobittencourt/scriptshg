@@ -11,6 +11,7 @@ echo -e "2) Realizar a restauração total da conta."
 echo -e "3) Mover o backup feito na primeira etapa para a home do cliente com o nome de backup_hg\n"
 echo -e "Qual o número do ticket de restauração?\n"
 read -p ticket
+echo $ticket
 echo -e "Qual o usuário para restauração?\n"
 read -p usuario
 echo "Desejar realizar a restauração completa da conta ou parcial? (C ou P)"
