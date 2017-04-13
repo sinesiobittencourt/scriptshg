@@ -12,12 +12,14 @@ echo -e "3) Mover o backup feito na primeira etapa para a home do cliente com o 
 echo -e "Qual o número do ticket de restauração?\n"
 read -p ticket
 echo -e "Qual o usuário para restauração?\n"
-read usuario
+read -p usuario
 echo "Desejar realizar a restauração completa da conta ou parcial? (C ou P)"
-read decisao
+read -p decisao
 	case $decisao in
 		C|c) echo "Iniciando a cópia da cópia por segurança";;
-			#mkdir /home/hgtrans/$ticket;
+			echo "ATE AQUI 1 "
+			mkdir /home/hgtrans/$ticket;
+			echo "ATE AQUI 2 "
 			if [-d /home/hgtrans/$ticket] then
 				/scripts/pkgacct $usuario /home/hgtrans/$ticket;
 				clear
