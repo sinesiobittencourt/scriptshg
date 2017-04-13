@@ -1,10 +1,11 @@
-#!bash
+#!/bin/bash
 
-printf "############################################################
-        #                                                          #
-        #              RESTAURAÇÃO DE BACKUP                       #
-        #                                                          #
-        ############################################################\n"
+printf 
+"############################################################
+#                                                          #
+#              RESTAURAÇÃO DE BACKUP                       #
+#                                                          #
+############################################################\n"
 echo -e "O processo será composto pelas etapas abaixo:\n"
 echo -e "1) Gerar um backup de segurança da conta no /home/hgtrans/ com o número do ticket."
 echo -e "2) Realizar a restauração total da conta."
