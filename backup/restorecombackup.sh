@@ -1,16 +1,15 @@
 #!bash
 
-
-echo "############################################################"
-echo "#                                                          #"
-echo "#              RESTAURAÇÃO DE BACKUP                       #"
-echo "#                                                          #" 
-echo "############################################################"
-echo "O processo será composto pelas etapas abaixo:"
-echo "1) Gerar um backup de segurança da conta no /home/hgtrans/ com o número do ticket."
-echo "2) Realizar a restauração total da conta."
-echo "3) Mover o backup feito na primeira etapa para a home do cliente com o nome de backup_hg"
-echo "Qual o número do ticket de restauração?"
+printf "############################################################
+        #                                                          #
+        #              RESTAURAÇÃO DE BACKUP                       #
+        #                                                          #
+        ############################################################\n"
+echo -e "O processo será composto pelas etapas abaixo:\n"
+echo -e "1) Gerar um backup de segurança da conta no /home/hgtrans/ com o número do ticket."
+echo -e "2) Realizar a restauração total da conta."
+echo -e "3) Mover o backup feito na primeira etapa para a home do cliente com o nome de backup_hg\n"
+echo -e "Qual o número do ticket de restauração?\n"
 read ticket
 echo -e "Qual o usuário para restauração?\n"
 read usuario
@@ -91,4 +90,3 @@ read decisao
 
 	*) echo "Você tem de entrar com um parâmetro válido, utilize C/c ou P/p" ;;
 	esac
-
