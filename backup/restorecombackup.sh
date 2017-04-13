@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "############################################################
+printf "\n############################################################
         #                                                          #
         #              RESTAURAÇÃO DE BACKUP                       #
         #                                                          #
@@ -10,7 +10,7 @@ echo -e "1) Gerar um backup de segurança da conta no /home/hgtrans/ com o núme
 echo -e "2) Realizar a restauração total da conta."
 echo -e "3) Mover o backup feito na primeira etapa para a home do cliente com o nome de backup_hg\n"
 echo -e "Qual o número do ticket de restauração?\n"
-read ticket
+read -p ticket
 echo -e "Qual o usuário para restauração?\n"
 read usuario
 echo "Desejar realizar a restauração completa da conta ou parcial? (C ou P)"
