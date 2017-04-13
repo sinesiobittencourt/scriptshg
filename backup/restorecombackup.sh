@@ -59,7 +59,7 @@ read decisao
 				else
 					/home/hgbackupdir/restore.pl.old $usuario mysql $restorebanco
 				fi
-				echo -e "A restauração foi finalizada!"\n
+				echo -e "A restauração foi finalizada!\n"
 				read -n 1 -p "Pressione qualquer tecla para finalizar!"
 				}	
 						
@@ -67,21 +67,21 @@ read decisao
 
 				#DIRETÓRIO
 				diretorio() {
-				echo -e "Digite o caminho completo do diretório que deseja restaurar:"\n
+				echo -e "Digite o caminho completo do diretório que deseja restaurar:\n"
 				read restore_diretorio
 				echo -e "A restauração do diretório $restore_diretorio está sendo iniciada..."
 				/home/hgbackupdir/restore.pl.old $usuario directory $restore_diretorio;
-				echo -e "A restauração foi finalizada!"\n
+				echo -e "A restauração foi finalizada!\n"
 				read -n 1 -p "Pressione qualquer tecla para finalizar!"
 				}
 
 				#ARQUIVO
 				arquivo() {
-				echo -e "Digite o caminho completo do arquivo que deseja restaurar:"\n
+				echo -e "Digite o caminho completo do arquivo que deseja restaurar:\n"
 				read restore_arquivo
 				echo -e "A restauração do arquivo $restore_arquivo está sendo iniciada..."			
 				/home/hgbackupdir/restore.pl.old $usuario file $restore_arquivo;
-				echo -e "A restauração foi finalizada!"\n
+				echo -e "A restauração foi finalizada!\n"
 				read -n 1 -p "Pressione qualquer tecla para finalizar"
 				}
 
