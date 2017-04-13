@@ -17,7 +17,7 @@ echo "Desejar realizar a restauração completa da conta ou parcial? (C ou P)"
 read decisao
 	case $decisao in
 		C|c) echo "Iniciando a cópia da cópia por segurança";;
-			mkdir /home/hgtrans/$ticket;
+			#mkdir /home/hgtrans/$ticket;
 			if [-d /home/hgtrans/$ticket] then
 				/scripts/pkgacct $usuario /home/hgtrans/$ticket;
 				clear
